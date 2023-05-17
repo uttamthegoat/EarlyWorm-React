@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class NewsItem extends Component {
   render() {
-    let { title, content, urlToImage, url } = this.props.article;
+    let { title, description, urlToImage, url } = this.props.news;
     return (
       <div className="container my-3 p-4">
         <div className="card">
@@ -18,7 +18,7 @@ export default class NewsItem extends Component {
               {title?title.slice(0, 50) + "...":"title"}
             </h5>
             <p className="card-text">
-              {content?content.slice(0, 75) + "...":"content"}
+              {description?description.slice(0, 75) + "...":"content"}
             </p>
             <a href={url?url:"/"} /*target="_blank"*/ className="btn btn-sm btn-primary">
               Read More
