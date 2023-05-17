@@ -1,0 +1,84 @@
+{
+  "status": "ok",
+  "totalResults": 35,
+  "articles": [
+    {
+      "source": {
+        "id": "gothamist",
+        "name": "Gothamist"
+      },
+      "author": "https://gothamist.com/staff/verónica-del-valle",
+      "title": "A drug-resistant skin infection has come to NYC. Here's what you need to know about it. - Gothamist",
+      "description": "A new report linked two local cases of ringworm rash to an aggressive strain of a fungus named Trichophyton indotineae.",
+      "url": "https://gothamist.com/news/a-drug-resistant-skin-infection-has-come-to-nyc-heres-what-you-need-to-know-about-it",
+      "urlToImage": "https://cms.prod.nypr.digital/images/338580/fill-1200x650|format-webp|webpquality-85",
+      "publishedAt": "2023-05-16T14:12:00Z",
+      "content": "New York and federal health officials have issued a warning about two cases of a drug-resistant, highly contagious skin infection in New York City.\r\nThe new report, published late last week by the Ce… [+3595 chars]"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "Jeff Stein, Rachel Siegel, Marianna Sotomayor",
+      "title": "Will Biden cave to GOP demands as debt ceiling deadline approaches? - The Washington Post",
+      "description": "White House spurs concerns among Democratic allies as negotiators weigh new limits on spending in deal with Republicans.",
+      "url": "https://www.washingtonpost.com/business/2023/05/16/biden-debt-ceiling-2023-gop-demands/",
+      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/2EZQAZASAQUGR3UCVIBEM7JNUI_size-normalized.jpg&w=1440",
+      "publishedAt": "2023-05-16T14:08:06Z",
+      "content": "Comment on this story\r\nComment\r\nThe White Houses liberal allies are increasingly worried that negotiations with House Republicans over the budget risk rewarding the GOP for threatening the U.S. econo… [+8208 chars]"
+    },
+    {
+      "source": {
+        "id": "cnbc",
+        "name": "CNBC"
+      },
+      "author": "Sarah Min, Brian Evans",
+      "title": "Stocks slip on disappointing Home Depot forecast, debt ceiling worries: Live updates - CNBC",
+      "description": "Investors digested lackluster guidance from Home Depot, and hoped for progress between President Biden and congressional leaders over raising the debt ceiling.",
+      "url": "https://www.cnbc.com/2023/05/15/stock-market-today-live-updates.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/107222499-1681136310892-gettyimages-1481187122-032a3972_unpq21u3.jpeg?v=1684188202&w=1920&h=1080",
+      "publishedAt": "2023-05-16T14:01:00Z",
+      "content": "Stocks dipped Tuesday as investors digested a lackluster forecast from Home Depot. Wall Street also turned its attention to a meeting between congressional leaders and President Joe Biden on the U.S.… [+1962 chars]"
+    },
+    {
+      "source": {
+        "id": "dead-line",
+        "name": "Deadline"
+      },
+      "author": "Anthony D'Alessandro",
+      "title": "Cannes Juror Brie Larson Deflects Question About Johnny Depp Controversial Opening Night Film ‘Jeanne du Barry’ - Deadline",
+      "description": "With Johnny Depp making his big-screen return on the opening night of the Cannes Film Festival in Jeanne du Barry, after being shut out of Hollywood from battling ex-wife Amber Heard in the courts,…",
+      "url": "https://deadline.com/2023/05/cannes-juror-brie-larson-johnny-depp-jeanne-du-barry-1235367987/",
+      "urlToImage": "https://deadline.com/wp-content/uploads/2023/05/GettyImages-1490445597-1.jpg?w=1024",
+      "publishedAt": "2023-05-16T13:50:00Z",
+      "content": "With Johnny Depp making his big-screen return on the opening night of the Cannes Film Festival in Jeanne du Barry, after being shut out of Hollywood from battling ex-wife Amber Heard in the courts, f… [+2427 chars]"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "Adam Taylor, David L. Stern",
+      "title": "Ukraine intercepts missiles as Russia steps up strikes on Kyiv - The Washington Post",
+      "description": "Russia fired a fearsome overnight barrage of missiles at Kyiv, but Ukrainian officials claimed a perfect interception rate using air defenses bolstered by the West.",
+      "url": "https://www.washingtonpost.com/world/2023/05/16/missiles-russia-ukraine-war-kyiv/",
+      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/05-16-2023/t_da90fa2186cd4d74a40786061f52ecf6_name_0516_kyiv.png&w=1440",
+      "publishedAt": "2023-05-16T13:45:00Z",
+      "content": "Comment on this story\r\nComment\r\nKYIV, Ukraine Ukrainian air defenses intercepted 18 attempted Russian strikes on Kyiv early Tuesday including six hypersonic missiles, military and city authorities sa… [+8481 chars]"
+    },
+    {
+      "source": {
+        "id": "independent",
+        "name": "Independent"
+      },
+      "author": "Graeme Massie",
+      "title": "Rudy Guiliani allegedly forced aide to give him oral sex while on phone to Trump - The Independent",
+      "description": "Mr Giuliani’s spokesperson says the former New York City mayor ‘unequivocally denies the allegations raised by Ms Dunphy’ in the lawsuit",
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/rudy-giuliani-noelle-dunphy-lawsuit-sued-b2339658.html",
+      "urlToImage": "https://static.independent.co.uk/2023/05/15/23/GettyImages-1438263766.jpg?quality=75&width=1200&auto=webp",
+      "publishedAt": "2023-05-16T12:28:27Z",
+      "content": "Sign up for the daily Inside Washington email for exclusive US coverage and analysis sent to your inbox\r\nGet our free Inside Washington email\r\nRudy Guiliani has been accused of forcing an aide to giv… [+5445 chars]"
+    }
+  ]
+}
