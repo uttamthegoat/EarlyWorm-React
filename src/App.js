@@ -2,7 +2,8 @@ import './App.css'
 
 import React, { Component } from 'react'
 import Navbar from './components/Navbar'
-import News from './components/News'
+// import News from './components/News'
+import NewsBlock from './components/NewsBlock'
 
 export default class App extends Component {
   c="goat"
@@ -10,7 +11,8 @@ export default class App extends Component {
     return (
       <div className='App'>
         <Navbar title="NewsMonkey"/>
-        <News/>
+        <NewsBlock/>
+        {/* <News/> */}
       </div>
     )
   }

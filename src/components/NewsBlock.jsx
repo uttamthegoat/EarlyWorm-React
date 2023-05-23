@@ -1,7 +1,7 @@
-// This is a page built using bingnews
+// This is a page built using newsapi.org
 
 import React, { Component } from "react";
-import NewsItem from "./NewsItem";
+import NewsCard from "./NewsCard";
 
 export default class News extends Component {
   constructor() {
@@ -13,21 +13,13 @@ export default class News extends Component {
     };
   }
   componentDidMount() {
-    const url =
-      "https://bing-news-search1.p.rapidapi.com/news?safeSearch=Off&textFormat=Raw";
-    const options = {
-      method: "GET",
-      headers: {
-        "X-BingApis-SDK": "true",
-        "X-RapidAPI-Key": "bfea96b9b0msh95e1d05e1cf154ep13966ajsnf990a599dd2a",
-        "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
-      },
-    };
-    fetch(url, options)
+    let url ="https://newsapi.org/v2/top-headlines?country=us&apiKey=c10daa9425e3481688f5d493f8c810ac"
+    
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.value);
-        this.setState({articles:data.value})
+        console.log(data.articles);
+        this.setState({articles:data.articles})
         console.log(this.state.articles);
       })
       .catch(err=>console.log("error"));
@@ -61,7 +53,7 @@ export default class News extends Component {
         <div className="row w-100">{this.state.articles.map(element=>{
           return (
             <div key={element.url} className="col-md-4 my-3">
-              <NewsItem news={element}/>
+              <NewsCard news={element}/>
             </div>
           )
         })}</div>
