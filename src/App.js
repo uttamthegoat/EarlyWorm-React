@@ -3,8 +3,8 @@ import "./App.css";
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import NewsBlock from "./components/News";
-import About from './components/About'
+import News from "./components/News";
+import About from "./components/About";
 import Redirect from "./components/Redirect";
 import Footer from "./components/Footer";
 
@@ -18,6 +18,7 @@ export default function App() {
     } else {
       setTheme("light");
       document.body.style.backgroundColor = "white";
+      document.body.style.color = "#000";
     }
   };
   const [pageInfo, setPageInfo] = useState({
@@ -26,17 +27,18 @@ export default function App() {
   });
   return (
     <div className="App">
-      <Navbar title="NewsMonkey" mode={theme} toggleMode={toggleMode} />
+      <Navbar title="NewsMonkey" theme={theme} toggleMode={toggleMode} />
       <Routes>
         <Route
           exact
           path="/"
           element={
-            <NewsBlock
+            <News
               key="general"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="general"
+              mode={theme}
             />
           }
         />
@@ -44,11 +46,12 @@ export default function App() {
           exact
           path="/business"
           element={
-            <NewsBlock
+            <News
               key="business"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="business"
+              mode={theme}
             />
           }
         />
@@ -56,11 +59,12 @@ export default function App() {
           exact
           path="/entertainment"
           element={
-            <NewsBlock
+            <News
               key="entertainment"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="entertainment"
+              mode={theme}
             />
           }
         />
@@ -68,11 +72,12 @@ export default function App() {
           exact
           path="/general"
           element={
-            <NewsBlock
+            <News
               key="general"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="general"
+              mode={theme}
             />
           }
         />
@@ -80,11 +85,12 @@ export default function App() {
           exact
           path="/health"
           element={
-            <NewsBlock
+            <News
               key="health"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="health"
+              mode={theme}
             />
           }
         />
@@ -92,11 +98,12 @@ export default function App() {
           exact
           path="/science"
           element={
-            <NewsBlock
+            <News
               key="science"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="science"
+              mode={theme}
             />
           }
         />
@@ -104,11 +111,12 @@ export default function App() {
           exact
           path="/sports"
           element={
-            <NewsBlock
+            <News
               key="sports"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="sports"
+              mode={theme}
             />
           }
         />
@@ -116,18 +124,19 @@ export default function App() {
           exact
           path="/technology"
           element={
-            <NewsBlock
+            <News
               key="technology"
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="technology"
+              mode={theme}
             />
           }
         />
-        <Route exact path="/about" element={<About/>} />
+        <Route exact path="/about" element={<About />} />
         <Route path="*" element={<Redirect />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

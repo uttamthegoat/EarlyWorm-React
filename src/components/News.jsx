@@ -77,7 +77,7 @@ export default class News extends Component {
                   className="col-lg-4"
                   style={{ padding: "10px", margin: "30px 0px" }}
                 >
-                  <NewsItem news={element} category={this.props.category} />
+                  <NewsItem news={element} category={this.props.category} theme={this.props.mode}/>
                 </div>
               );
             })}

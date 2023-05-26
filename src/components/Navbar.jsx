@@ -6,8 +6,8 @@ export default function Navbar(props) {
   return (
     <nav
       className={`navbar navbar-expand-lg navbar-${
-        props.mode === "light" ? "muted" : "dark"
-      } bg-${props.mode === "light" ? "muted" : "dark"}`}
+        props.theme === "light" ? "muted" : "dark"
+      } bg-${props.theme === "light" ? "muted" : "dark"}`}
     >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
@@ -72,8 +72,9 @@ export default function Navbar(props) {
               </NavLink>
             </li>
           </ul>
-          <div>
-            <ThemeButton handleTheme={props.toggleMode} mode={props.mode}/>
+          <div className="d-flex">
+            <ThemeButton handleTheme={props.toggleMode} theme={props.theme} />
+            <span className="mx-3">Enable {props.theme==="light"?"Dark":"Light"} Theme</span>
           </div>
         </div>
       </div>

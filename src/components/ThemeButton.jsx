@@ -3,7 +3,7 @@ import styles from "./styles/ThemeButton.module.css";
 
 export default function ThemeButton(props) {
   const changeColor = () => {
-    if (props.mode === "light") {
+    if (props.theme === "light") {
       document.getElementById("checkbox_label").style.backgroundColor = "white";
       document.getElementById("ball").style.backgroundColor = "black";
     } else {
@@ -19,7 +19,7 @@ export default function ThemeButton(props) {
         id="checkbox"
         onClick={changeColor}
         onChange={() => {
-          props.handleTheme(props.mode);
+          props.handleTheme(props.theme);
         }}
       />
       <label

@@ -6,8 +6,14 @@ export default function NewsItem(props) {
     "https://timesofindia.indiatimes.com/thumb/msid-99416197,width-1200,height-900,resizemode-4/99416197.jpg";
   const { title, description, url, urlToImage, publishedAt, source } =
     props.news;
+  let cardStyle = {
+    backgroundColor: props.theme === "light" ? "#d0f0ff" : "#a8bcff54",
+  };
+  let cardTextStyle = {
+    color: props.theme === "light" ? "black" : "white",
+  };
   return (
-    <article className={styles.card + " container"}>
+    <article className={styles.card + " container"} style={cardStyle}>
       <header className={styles.card__thumb}>
         <img
           src={urlToImage ? urlToImage : defaultUrl}
@@ -26,13 +32,16 @@ export default function NewsItem(props) {
             Read
           </a>
         </div>
-        <h2 className={styles.card__title}>
-          <p>{title ? title.slice(0, 40) + "..." : "Title"}</p>
+        <h2
+          className={styles.card__title}
+          style={cardTextStyle}
+        >
+          {title ? title.slice(0, 40) + "..." : "Title"}
         </h2>
         <div className={styles.card__subtitle}>
           {source.name ? source.name : "Unknown"}
         </div>
-        <p className={styles.card__description}>
+        <p className={styles.card__description} style={cardTextStyle}>
           {description ? description.slice(0, 75) + "..." : "description"}
         </p>
       </div>
