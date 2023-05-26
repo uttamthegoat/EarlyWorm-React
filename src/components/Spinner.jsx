@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import loading from './images/loading.gif'
-import styles from './Spinner.module.css'
+import styles from './styles/Spinner.module.css'
 
 export default class Spinner extends Component {
   render() {

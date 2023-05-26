@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ThemeButton.module.css";
+import styles from "./styles/ThemeButton.module.css";
 
 export default function ThemeButton(props) {
   const changeColor = () => {

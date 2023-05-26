@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import NewsBlock from "./components/News";
 import About from './components/About'
 import Redirect from "./components/Redirect";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [theme, setTheme] = useState("light");
@@ -126,6 +127,7 @@ export default function App() {
         <Route exact path="/about" element={<About/>} />
         <Route path="*" element={<Redirect />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
