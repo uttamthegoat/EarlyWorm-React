@@ -19,7 +19,7 @@ export default function App() {
       document.body.style.backgroundColor = "white";
     }
   };
-  const [page, setPage] = useState({
+  const [pageInfo, setPageInfo] = useState({
     pageSize: 6,
     country: "in",
   });
@@ -33,8 +33,8 @@ export default function App() {
           element={
             <NewsBlock
               key="general"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="general"
             />
           }
@@ -45,8 +45,8 @@ export default function App() {
           element={
             <NewsBlock
               key="business"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="business"
             />
           }
@@ -57,8 +57,8 @@ export default function App() {
           element={
             <NewsBlock
               key="entertainment"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="entertainment"
             />
           }
@@ -69,8 +69,8 @@ export default function App() {
           element={
             <NewsBlock
               key="general"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="general"
             />
           }
@@ -81,8 +81,8 @@ export default function App() {
           element={
             <NewsBlock
               key="health"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="health"
             />
           }
@@ -93,8 +93,8 @@ export default function App() {
           element={
             <NewsBlock
               key="science"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="science"
             />
           }
@@ -105,8 +105,8 @@ export default function App() {
           element={
             <NewsBlock
               key="sports"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="sports"
             />
           }
@@ -117,8 +117,8 @@ export default function App() {
           element={
             <NewsBlock
               key="technology"
-              pageSize={page.pageSize}
-              country={page.country}
+              pageSize={pageInfo.pageSize}
+              country={pageInfo.country}
               category="technology"
             />
           }
