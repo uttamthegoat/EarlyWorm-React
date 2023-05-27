@@ -3,6 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import News from "./components/News";
 import About from "./components/About";
 import Redirect from "./components/Redirect";
@@ -29,19 +30,7 @@ export default function App() {
     <div className="App">
       <Navbar title="NewsMonkey" theme={theme} toggleMode={toggleMode} />
       <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <News
-              key="general"
-              pageSize={pageInfo.pageSize}
-              country={pageInfo.country}
-              category="general"
-              mode={theme}
-            />
-          }
-        />
+        <Route exact path="/" element={<Home theme={theme} />} />
         <Route
           exact
           path="/business"
