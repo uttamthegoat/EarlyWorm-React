@@ -23,7 +23,7 @@ export default function App() {
     }
   };
   const [pageInfo, setPageInfo] = useState({
-    pageSize: 3,
+    pageSize: 9,
     country: "in",
   });
   return (
