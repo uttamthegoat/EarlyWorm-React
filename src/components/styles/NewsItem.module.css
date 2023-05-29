@@ -10,7 +10,7 @@
 
 .card {
   padding: 12px 12px;
-  width: 358px;
+  max-width: 358px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   -webkit-transition: box-shadow 0.5s;

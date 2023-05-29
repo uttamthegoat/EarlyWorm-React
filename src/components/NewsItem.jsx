@@ -19,6 +19,7 @@ export default function NewsItem(props) {
           src={urlToImage ? urlToImage : defaultUrl}
           alt="urlToImage"
           style={{ width: "358px", height: "239px" }}
+          className="img-fluid"
         />
       </header>
       <div className={styles.card__category}>

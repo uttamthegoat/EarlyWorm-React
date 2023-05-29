@@ -23,7 +23,7 @@ export default function App() {
     }
   };
   const [pageInfo, setPageInfo] = useState({
-    pageSize: 6,
+    pageSize: 3,
     country: "in",
   });
   return (
@@ -122,10 +122,10 @@ export default function App() {
             />
           }
         />
-        <Route exact path="/about" element={<About />} />
+        <Route exact path="/about" element={<About theme={theme}/>} />
         <Route path="*" element={<Redirect />} />
       </Routes>
-      <Footer />
+      <Footer theme={theme}/>
     </div>
   );
 }
