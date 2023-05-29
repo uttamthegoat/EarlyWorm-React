@@ -25,12 +25,12 @@ export default function Footer(props) {
             </Link>
           </li>
           <li className={styles.footer1__lists}>
-            <a href="#" style={textColor}>
+            <a style={textColor}>
               Terms of Use
             </a>
           </li>
           <li className={styles.footer1__lists}>
-            <a href="#" style={textColor}>
+            <a style={textColor}>
               Privacy Policy
             </a>
           </li>
@@ -52,7 +52,7 @@ export default function Footer(props) {
             </a>
           </li>
           <li className={styles.footer1__lists}>
-            <a href="#" style={textColor}>
+            <a style={textColor}>
               <i className="fa-solid fa-hashtag fa-beat"></i>Social Media
             </a>
           </li>

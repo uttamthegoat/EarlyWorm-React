@@ -22,10 +22,10 @@ export default function App() {
       document.body.style.color = "#000";
     }
   };
-  const [pageInfo, setPageInfo] = useState({
+  const pageInfo={
     pageSize: 9,
     country: "in",
-  });
+  }
   return (
     <div className="App">
       <Navbar title="NewsMonkey" theme={theme} toggleMode={toggleMode} />
