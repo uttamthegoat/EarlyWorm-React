@@ -1,11 +1,6 @@
 .loaderbox {
   display: flex;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    rgba(225, 225, 225, 0.1),
-    rgba(225, 225, 225, 0)
-  );
   backdrop-filter: blur(10px);
   border-radius: 10px;
 }
