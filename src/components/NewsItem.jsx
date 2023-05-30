@@ -4,7 +4,7 @@ import styles from "./styles/NewsItem.module.css";
 export default function NewsItem(props) {
   const defaultUrl =
     "https://timesofindia.indiatimes.com/thumb/msid-99416197,width-1200,height-900,resizemode-4/99416197.jpg";
-  const { title, description, url, urlToImage, publishedAt, source } =
+  const { description, url, urlToImage, publishedAt, source } =
     props.news;
   let cardStyle = {
     backgroundColor: props.theme === "light" ? "#d0f0ff" : "#a8bcff54",
@@ -33,17 +33,14 @@ export default function NewsItem(props) {
             Read
           </a>
         </div>
-        <h2
-          className={styles.card__title}
-          style={cardTextStyle}
-        >
-          {title ? title.slice(0, 40) + "..." : "Title"}
+        <h2 className={styles.card__title} style={cardTextStyle}>
+          {props.title ? props.title.slice(0, 40) + "..." : ""}
         </h2>
         <div className={styles.card__subtitle}>
           {source.name ? source.name : "Unknown"}
         </div>
         <p className={styles.card__description} style={cardTextStyle}>
-          {description ? description.slice(0, 75) + "..." : "description"}
+          {description ? description.slice(0, 75) + "..." : ""}
         </p>
       </div>
       <footer className={styles.card__footer + " mb-3"}>

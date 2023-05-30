@@ -2,12 +2,12 @@ import "./App.css";
 
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import LoadingBar from "react-top-loading-bar";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import News from "./components/News";
 import About from "./components/About";
 import Redirect from "./components/Redirect";
-import Footer from "./components/Footer";
 
 export default function App() {
   const [theme, setTheme] = useState("light");
@@ -22,21 +22,35 @@ export default function App() {
       document.body.style.color = "#000";
     }
   };
-  const pageInfo={
+  const apiKey=process.env.REACT_APP_NEWS_API
+  const pageInfo = {
     pageSize: 9,
     country: "in",
-  }
+  };
+  const [progress, setProgress] = useState(0);
   return (
     <div className="App">
-      <Navbar title="NewsMonkey" theme={theme} toggleMode={toggleMode} />
+      <Navbar title="EarlyWorm" theme={theme} toggleMode={toggleMode} />
+      <LoadingBar
+        color="#f11946"
+        height={3}
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
       <Routes>
-        <Route exact path="/" element={<Home theme={theme} />} />
+        <Route
+          exact
+          path="/"
+          element={<Home apiKey={apiKey} setProgress={setProgress} theme={theme} />}
+        />
         <Route
           exact
           path="/business"
           element={
             <News
               key="business"
+              apiKey={apiKey}
+              setProgress={setProgress}
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="business"
@@ -50,6 +64,8 @@ export default function App() {
           element={
             <News
               key="entertainment"
+              apiKey={apiKey}
+              setProgress={setProgress}
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="entertainment"
@@ -63,6 +79,8 @@ export default function App() {
           element={
             <News
               key="general"
+              apiKey={apiKey}
+              setProgress={setProgress}
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="general"
@@ -76,6 +94,8 @@ export default function App() {
           element={
             <News
               key="health"
+              apiKey={apiKey}
+              setProgress={setProgress}
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="health"
@@ -89,6 +109,8 @@ export default function App() {
           element={
             <News
               key="science"
+              apiKey={apiKey}
+              setProgress={setProgress}
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="science"
@@ -102,6 +124,8 @@ export default function App() {
           element={
             <News
               key="sports"
+              apiKey={apiKey}
+              setProgress={setProgress}
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="sports"
@@ -115,6 +139,8 @@ export default function App() {
           element={
             <News
               key="technology"
+              apiKey={apiKey}
+              setProgress={setProgress}
               pageSize={pageInfo.pageSize}
               country={pageInfo.country}
               category="technology"
@@ -122,10 +148,10 @@ export default function App() {
             />
           }
         />
-        <Route exact path="/about" element={<About theme={theme}/>} />
+        <Route exact path="/about" element={<About setProgress={setProgress} theme={theme} />} />
         <Route path="*" element={<Redirect />} />
       </Routes>
-      <Footer theme={theme}/>
+      {/* <Footer theme={theme}/> */}
     </div>
   );
 }
