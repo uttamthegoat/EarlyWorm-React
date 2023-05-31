@@ -5,9 +5,9 @@ import ThemeButton from "./ThemeButton";
 export default function Navbar(props) {
   return (
     <nav
-      className={`navbar navbar-expand-lg navbar-${
-        props.theme === "light" ? "muted" : "dark"
-      } bg-${props.theme === "light" ? "muted" : "dark"}`}
+      className={`navbar navbar-expand-lg sticky-top navbar-${
+        props.theme === "light" ? "light " : "dark"
+      } bg-${props.theme === "light" ? "light" : "dark"}`}
     >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
